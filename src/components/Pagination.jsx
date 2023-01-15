@@ -8,7 +8,6 @@ function Paginations() {
   const dispatch = useDispatch();
   const currentPage = useSelector((state) => state.pokemon.currentPage);
   const totalPages = useSelector((state) => state.pokemon.totalPages);
-
   const handlePageChange = (event, value) => {
     dispatch(fetchPokemons(value));
   };
