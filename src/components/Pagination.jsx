@@ -18,7 +18,7 @@ function Paginations() {
         <Stack spacing={2}>
           <Pagination
             variant="outlined"
-            count={Math.ceil(totalPages)}
+            count={totalPages}
             page={currentPage}
             onChange={handlePageChange}
           />
